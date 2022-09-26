@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url(fonts/Pixel.ttf);
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url(fonts/Oswald-Regular.ttf);
+}
+
+body {
+    background-color: #13232E;
+}
+
+h1 {
+    color: rgb(237, 232, 232);
+    text-align: center;
+    margin: 15px 0 40px 0;
+    font-family: 'Oswald';
+    font-size: 25px;
+}
+
+#mainContainer {
+    position: relative;
+    height: 50vh;
+    width: 80vw;
+    border: 5px solid dodgerblue;
+    margin: auto;
+    overflow: hidden;
+    background: url(imgs/fundo.jpg) center center repeat;
+    background-size: 250px;
+}
+
+.bird {
+    position: absolute;
+    width: 45px;
+    left: calc(50% - 30px);
+    bottom: 50%;
+}
+
+.barries {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    top: 0;
+}
+
+.barrier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barrier .border {
+    height: 30px;
+    width: 100px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border: 2px solid black;
+}
+
+.barrier .body {
+    height: 40px;
+    width: 90px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+}
+
+#progress {
+    position: absolute;
+    color: rgb(237, 232, 232);
+    font-family: 'Pixel';
+    z-index: 500;
+    top: 8px;
+    right: 15px;   
+}
+
+
+
