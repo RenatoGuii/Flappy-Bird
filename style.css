@@ -29,7 +29,9 @@ h1 {
 #mainContainer {
     position: relative;
     height: 50vh;
+    max-height: 720px;
     width: 80vw;
+    max-width: 1000px;
     border: 5px solid dodgerblue;
     margin: auto;
     overflow: hidden;

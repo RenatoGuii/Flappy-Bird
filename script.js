@@ -55,7 +55,7 @@ function cicloBarreiras (alturaJogo, larguraJogo, abertura,  espaco, notificarPo
         this.pares.forEach(par => {
             par.setX(par.getX() - deslocamento)
 
-            if (par.getX() < -par.getLargura()) {
+            if (par.getX() < par.getLargura()) {
                 par.setX(par.getX() + espaco * this.pares.length)
                 par.sortearAbertura()
             }
