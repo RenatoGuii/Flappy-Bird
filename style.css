@@ -28,10 +28,8 @@ h1 {
 
 #mainContainer {
     position: relative;
-    height: 50vh;
-    max-height: 720px;
-    width: 80vw;
-    max-width: 1000px;
+    height: 400px;
+    width: 800px;
     border: 5px solid dodgerblue;
     margin: auto;
     overflow: hidden;
@@ -43,7 +41,6 @@ h1 {
     position: absolute;
     width: 45px;
     left: calc(50% - 30px);
-    bottom: 50%;
 }
 
 .barries {
@@ -76,13 +73,20 @@ h1 {
     background: linear-gradient(90deg, #639301, #A5E82E);
 }
 
-#progress {
+.progress {
     position: absolute;
     color: rgb(237, 232, 232);
     font-family: 'Pixel';
     z-index: 500;
     top: 8px;
     right: 15px;   
+}
+
+.avisoRefresh {
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Oswald';
 }
 
 
